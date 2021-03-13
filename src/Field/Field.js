@@ -25,17 +25,15 @@ export function Field(props) {
       })
     , [])
 
-  const squareItems = emptyArray(props.rows).map((_, rowIndex) => {
-    return emptyArray(props.cols).map((_, colIndex) => {
-      return (
-        <Square active={x === colIndex && y === rowIndex}
-                rows={props.rows}
-                cols={props.cols}
-                key={rowIndex  * props.rows + colIndex}
-        />)
-    })
-  })
-
+  const squareItems = emptyArray(props.rows).map((_, rowIndex) =>
+    emptyArray(props.cols).map((_, colIndex) =>
+      <Square active={x === colIndex && y === rowIndex}
+              rows={props.rows}
+              cols={props.cols}
+              key={rowIndex * props.rows + colIndex}
+      />
+    )
+  )
 
   return (
     <div className="Field">
