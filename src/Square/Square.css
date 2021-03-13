@@ -1,0 +1,12 @@
+.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.square--active {
+    background-image: url('../assets/player.svg');
+    background-size: 100%;
+}
