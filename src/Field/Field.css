@@ -1,0 +1,18 @@
+.Field  {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  background: green;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.square--active {
+  background: red;
+}
